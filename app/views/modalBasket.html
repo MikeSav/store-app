@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <h2>Your basket</h2>
+
+        <div id="basketCount"> Hey {{ customerName }} here's what you've got:
+            <br><br>You have {{ basket.length }} items in your basket
+        </div>
+        <div data-ng-repeat="item in basket track by $index" class="basketItems">
+            {{ item.name }} - {{ item.price | currency:"&#128;"}}
+            - <a href data-ng-click="removeItem(item)">remove item</a>
+        </div>
+
+        <div id="basketTotal">
+            Total Cost: {{ basketTotal | currency:"&#128;" }}
+        </div>
+    </div>
+    <footer>
+        <button data-ng-click="$close()"><span>Close</span></button>
+    </footer>
+</div>

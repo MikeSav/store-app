@@ -1,0 +1,89 @@
+/*
+
+When creating the layout/design I just came up with some standard colours,
+this should be refactored as we have some unused items...
+
+*/
+
+// Colors
+$colorWhite: #ffffff;
+
+$colorCyan-10: #cffefe;
+$colorCyan-20: #a3ffff;
+$colorCyan-30: #84ffff;
+$colorCyan-40: #66ffff;
+
+$colorBlue-10: #c2e8e9;
+$colorBlue-20: #86d1d3;
+$colorBlue-30: #5dc2c4;
+$colorBlue-40: #36b3b5;
+
+$colorRedLight-10: #fbc9c4;
+$colorRedLight-20: #f9948b;
+$colorRedLight-30: #f87366;
+$colorRedLight-40: #f75040;
+
+$colorRedDark-10: #e2c1c1;
+$colorRedDark-20: #c58585;
+$colorRedDark-30: #b15c5c;
+$colorRedDark-40: #9e3333;
+
+$colorGreyLight-10: #f9f9f9;
+$colorGreyLight-20: #f3f3f3;
+$colorGreyLight-30: #efefef;
+$colorGreyLight-40: #ebebeb;
+
+$colorGreyMedium-10: #dddddd;
+$colorGreyMedium-20: #c0c0c0;
+$colorGreyMedium-30: #ababab;
+$colorGreyMedium-40: #969696;
+
+$colorGreyDark-10: #c6c6c6;
+$colorGreyDark-20: #909090;
+$colorGreyDark-30: #6a6a6a;
+$colorGreyDark-40: #464646;
+
+$colorBlack-10: #b1b1b1;
+$colorBlack-20: #646464;
+$colorBlack-30: #333333;
+$colorBlack: #000000;
+
+// Main Swatch for full screen
+$colorKoromiko: #ffc56c;
+$colorRegalBlue: #003a6f;
+$colorSkyBlue: #6ec5e9;
+$colorSeaShell: #f2f1f1;
+$sillyPink: #ec359c;
+$validationDirty: #fcf8e3;
+$validationDirtyBorder: #fcfa82;
+$validationValid: #dff0d8;
+$validationValidBorder: #9bf073;
+
+
+// Fonts
+$fontSize-XXS: 8px;
+$fontSize-XS: 10px;
+$fontSize-S: 12px;
+$fontSize-M: 14px;
+$fontSize-L: 18px;
+$fontSize-XL: 32px;
+
+// Margins, Paddings, Radius, Z-Index ...
+$marginGeneralXXLarge: 60px;
+$marginGeneralLarge: 20px;
+$marginGeneralMedium: 15px;
+$marginGeneralSmall: 10px;
+$marginGeneralMinimal: 5px;
+
+$paddingGeneralLarge: 20px;
+$paddingGeneralMedium: 15px;
+$paddingGeneralSmall: 10px;
+$paddingGeneralMinimal: 5px;
+$paddingGeneralSmallCopy: 10px;
+
+$zindexModalBackdrop:     1040;
+$zindexModal:             1050;
+
+// Opacities
+$opacityModal:         0.5;
+$opacityModalBackdrop: 0.7;

@@ -1,0 +1,34 @@
+<div id="headerWrapper">
+    <div id="maxWidWrap">
+        <div id="header">
+            <header>
+                <h1>Company Name</h1>
+            </header>
+        </div>
+        <div id="admin">
+            <div id="logIn" data-ng-show="!loggedIn">
+                <a href data-ng-click="logIn()" id="loginHref"><i class="fa fa-user"></i></a>
+            </div>
+            <!--  come back to this - ng-if logged in!
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-camera fa-stack-1x"></i>
+            <i class="fa fa-ban fa-stack-2x text-danger"></i>
+            </span> -->
+            <div id="mobileButton" data-ng-click="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Place menu here for now... -->
+<div id="nav" class="repeat-animation" data-ng-show="showMenu">
+    <nav>
+        <ul data-set-menu-class>
+            <li class="menu"><a href="/">Home</a></li>
+            <li class="menu"><a href="/about">About</a></li>
+            <li class="menu"><a href="/products">Products</a></li>
+            <li class="menu"><a href="/faq">FAQ</a></li>
+            <li class="menu"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>

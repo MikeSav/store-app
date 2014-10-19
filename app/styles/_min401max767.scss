@@ -1,0 +1,170 @@
+@media screen and (max-width: 767px) and (min-width: 401px) {
+
+  body {
+    font-family: 'News Cycle', sans-serif;
+    background-color: $colorGreyDark-10;
+  }
+
+  button {
+    border: 1px solid $colorRedLight-40;
+    background: $colorRedLight-40;
+  }
+
+  .menu {
+    background-color: $colorRedLight-40;
+    color: $colorWhite;
+    @include borderBottomSolid($colorWhite);
+    padding: $paddingGeneralSmall 0 $paddingGeneralSmall $paddingGeneralSmall;
+    text-align: center;
+    box-sizing: border-box;
+    width: 20%;
+    margin: 0;
+
+    a {
+      color: $colorWhite;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  li {
+    float: left;
+    display: inline;
+  }
+
+  #welcomeText {
+    display: none;
+  }
+
+  #headerWrapper {
+    background: $colorRedDark-40;
+    @include borderBottomSolid($colorWhite);
+    overflow: auto;
+  }
+
+  #header {
+    float: left;
+    background: $colorRedDark-40;
+    padding: $paddingGeneralSmall;
+
+  }
+
+  #admin {
+    float: right;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #mobileButton {
+    display: none;
+  }
+
+  #logIn {
+    float: right;
+    display: inline-block;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    font-size: $fontSize-S;
+  }
+
+  #footer {
+    background: $colorRedDark-40;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #basketLink {
+    background-color: $colorWhite;
+    @include borderTopSolid($colorBlack-30);
+    padding: $paddingGeneralSmall;
+  }
+
+  a {
+    color: $colorRedDark-40;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-family: 'Sonsie One', cursive;
+    color: $colorWhite;
+    font-size: $fontSize-L;
+  }
+
+  h2 {
+    font-family: 'Sonsie One', cursive;
+    font-size: $fontSize-M;
+    clear: both;
+  }
+
+  // form stuff...
+  fieldset {
+
+    padding: $paddingGeneralSmall;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    h2 {
+      padding-left: 0;
+    }
+
+    .conlabel {
+      width: 100px;
+      display: inline-block;
+      font-size: $fontSize-M;
+      margin-bottom: $marginGeneralSmall;
+    }
+
+    input[type='text'], input[type='password'], input[type='email']  {
+      width: 300px;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+    // this is for the model inputs...
+    #logInWrapper input[type='text'], #logInWrapper input[type='password'] {
+      width: 90%;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+    textarea {
+      width: 300px;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+      display: inline-block;
+    }
+
+    #messageWrap * {
+      vertical-align: middle;
+    }
+
+  }
+
+  #newItems, .big-text {
+    display: none;
+  }
+
+  .form-message {
+    max-width: 360px;
+    background-color: $colorWhite !important;
+  }
+
+  .button-div {
+    text-align: center;
+    padding-top: $paddingGeneralSmall;
+  }
+
+}

@@ -1,0 +1,25 @@
+input.ng-pristine, textarea.ng-pristine {
+  border: 1px solid $colorBlack-20;
+  background: $colorWhite;
+}
+
+input.ng-dirty.ng-valid, textarea.ng-dirty.ng-valid  {
+  border: 1px solid $validationValidBorder;
+  background-color: $validationValid;
+}
+
+input.ng-dirty.ng-invalid, input.ng-dirty[class*='ng-invalid-*'], textarea.ng-dirty.ng-invalid, textarea.ng-dirty[class*='ng-invalid-*'] {
+  border: 1px solid $colorRedLight-20;
+  background-color: $colorRedLight-10;
+}
+
+// for the warning messages
+.form-message {
+  color: $colorRedLight-40;
+  text-transform: uppercase;
+  padding: $paddingGeneralSmall;
+  margin-bottom: $marginGeneralMedium;
+  background-color: $colorRedLight-20;
+  border-radius: 10px;
+}
+

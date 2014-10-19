@@ -1,0 +1,60 @@
+<!-- include menu -->
+<div data-ng-include="'views/menu.html'" data-ng-controller="MenuCtrl"></div>
+
+<div id="welcomeText">
+    <section>
+        Got something to say, send us a message!
+    </section>
+</div>
+
+<div id="messageForm">
+    <form name="contactForm" novalidate data-ng-submit="sendEmail(message)" autocomplete="off">
+        <fieldset>
+            <div>
+                <label class="conlabel">Name</label>
+                <input type="text" name="name" data-ng-model="message.name" placeholder="Name..."
+                       data-validation-pattern="inputDefaultRequired"
+                       >
+                <div class="form-message" data-ng-show="contactForm.name.$error.minlength || contactForm.name.$error.maxlength">Your name must be between 1 and 15 characters!</div>
+                <div class="form-message" data-ng-show="contactForm.name.$error.pattern">Whose name contains numbers/punctuation? Are you the artist formally known as Prince?</div>
+            </div>
+            <div>
+                <label class="conlabel">Email</label>
+                <input type="email" name="email" data-ng-model="message.email" placeholder="Email..."
+                       data-validation-pattern="inputEmailRequired"
+                       >
+                <div class="form-message" data-ng-show="contactForm.email.$error.minlength || contactForm.email.$error.maxlength">Enter your email you fool!</div>
+                <div class="form-message" data-ng-show="contactForm.email.$error.email">Enter a valid email, wazzuk!!!</div>
+            </div>
+            <div>
+                <label class="conlabel">Location</label>
+                <input type="text" name="location" data-ng-model="message.location" placeholder="Location..."
+                       data-validation-pattern="inputLocationRequired">
+                <div class="form-message" data-ng-show="contactForm.location.$error.minlength || contactForm.location.$error.maxlength">Location should be between 2 and 100 characters</div>
+            </div>
+            <div id="messageWrap">
+                <label class="conlabel">Message</label>
+                <textarea name="message" data-ng-model="message.message" placeholder="Message goes here thanks!"
+                          data-validation-pattern="inputTextArea"></textarea>
+                <div class="form-message" data-ng-show="contactForm.message.$error.minlength || contactForm.message.$error.maxlength">Message length should be between 1 and 1000 characters!</div>
+            </div>
+            <div data-ng-show="supportHTML5">
+                <label class="conlabel">Pick a colour</label>
+                <input type="color" data-ng-model="message.color">
+            </div>
+            <div class="button-div">
+                <button data-ng-disabled="contactForm.$invalid">Send Message</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+</div>
+
+<div id="footer">
+    <footer>
+        <address>
+            &#169; Company Name, Merseburger Strasse 14, Berlin, 10823
+        </address>
+    </footer>
+</div>

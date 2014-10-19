@@ -1,0 +1,152 @@
+@media screen and (max-width: 400px) {
+
+  body {
+    font-family: 'News Cycle', sans-serif;
+    background-color: $colorGreyMedium-10;
+  }
+
+  button {
+    border: 1px solid $colorBlue-20;
+    background: $colorBlue-20
+  }
+
+  .menu {
+    display: block;
+    background-color: $colorBlue-20;
+    color: $colorWhite;
+    @include borderBottomSolid($colorWhite);
+    padding: $paddingGeneralSmall 0 $paddingGeneralSmall $paddingGeneralSmall;
+
+    a {
+      color: $colorWhite;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  #welcomeText {
+    display: none;
+  }
+
+  #headerWrapper {
+    background: $colorBlue-40;
+    @include borderBottomSolid($colorWhite);
+    overflow: auto;
+  }
+
+  #header {
+    float: left;
+    background: $colorBlue-40;
+    padding: $paddingGeneralSmall;
+  }
+
+  #admin {
+    float: right;
+  }
+
+  #mobileButton {
+    display: inline-block;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    font-size: $fontSize-L;
+  }
+
+  #logIn {
+    display: inline-block;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    font-size: $fontSize-M;
+  }
+
+  #footer {
+    background: $colorBlue-10;
+    @include borderTopSolid($colorBlack-30);
+    padding: $paddingGeneralSmall;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #basketLink {
+    background-color: $colorWhite;
+    @include borderTopSolid($colorBlack-30);
+    padding: $paddingGeneralSmall;
+    padding-bottom: $paddingGeneralMedium;
+    position: fixed;
+    bottom: 35px;
+    width: 100%;
+  }
+
+  a {
+    color: $colorBlue-40;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-family: 'Sonsie One', cursive;
+    color: $colorBlue-10;
+    font-size: $fontSize-L;
+  }
+
+  h2 {
+    font-family: 'Sonsie One', cursive;
+    font-size: $fontSize-M;
+  }
+
+  /* Form Stuff */
+
+  fieldset {
+    padding: $paddingGeneralSmall;
+
+    h2 {
+      padding-left: 0;
+    }
+
+    .conlabel {
+      display: block;
+      font-size: $fontSize-M;
+      margin-bottom: $marginGeneralSmall;
+    }
+
+    input[type='text'], input[type='password'], input[type='email'] {
+      width: 90%;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+    textarea {
+      width: 90%;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+  }
+
+  #newItems {
+    display: none;
+  }
+
+  .big-text {
+    display: none;
+  }
+
+  .button-div {
+    text-align: center;
+    padding-top: $paddingGeneralSmall;
+  }
+
+  .form-message {
+    max-width: 340px;
+    background-color: $colorWhite !important;
+  }
+
+
+}

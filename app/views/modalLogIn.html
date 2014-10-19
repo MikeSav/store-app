@@ -1,0 +1,18 @@
+<div>
+    <form name="loginForm" novalidate data-ng-submit="login(user)" autocomplete="off">
+        <fieldset>
+            <div id="logInWrapper">
+                <h2>Log In</h2>
+                <label for="username" class="conlabel">Username</label>
+                <input type="text" id="username" data-ng-model="user.username">
+
+                <label for="password" class="conlabel">Password</label>
+                <input type="password" id="password" data-ng-model="user.password">
+            </div>
+            <footer>
+                <button><span>Log In</span></button>
+                <button data-ng-click="$close()"><span>Close</span></button>
+            </footer>
+        </fieldset>
+    </form>
+</div>

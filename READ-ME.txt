@@ -1,0 +1,69 @@
+About store-app
+=================
+
+PLEASE WORD WRAP!
+
+I've written the programming test using AngularJS as the application framework. It would have been far too easy to produce a static HTML page with jQuery providing a HTTP (Ajax) wrapper, jQuery UI for the modal and a plug-in to lazy load images.
+
+In fact I've deliberately not used jQuery as I've wanted to stay away from traditional DOM manipulation techniques (this is the not the AngularJS way!). Please note that I "time boxed" 2.5 hours for this test and with having no set design to work
+with a large amount of my time was determining the layout/UI.
+
+I've used Yeoman to provide scaffolding for the app incorporating Grunt as a build tool, Bower as my package manager and SASS as my CSS preprocessor (compass has been used too).  To run the application (in a dev mode rather than the build output) do the following:
+1. Install the npm components, open the command line/ terminal at the project root and run “npm install”.
+2. Install the npm components, open the command line/ terminal at the project root and run “bower install”.
+3. Open the command line/ terminal at the project root and run “grunt serve”.
+
+All files have numerous comments to provide an understanding to my thinking when developing the test. I have also used generic breakpoints for my CSS media queries and
+not targeted a range of devices or retina. I have not used Twitter Bootstrap for its Grid System or any of its CSS features - but I usually would! Using "col-xs/*" is handy and for real world apps there is no need to reinvent the wheel.
+
+Please note that I did create a small backend/Rest Service for this task however I have not included this as the project files would have been two large and 2 seperate projects. I have used static JSON files to dummy the data locally.
+
+Should a REST Service be available we would only need to change the target URLs in our $http methods. You will also see that I have written two methods of adding and retrieving from the basket: one method that keeps the basket in memory on
+the client and one method to store and return the basket from the server. To switch between the two approaches simply uncomment one code block and comment the other (the system comments explain how to do this). The current/invoked method
+keeps the basket in memory, we could extend this to use the HTML5 API localStorage, however I was running out of the time I sandboxed for this task.
+
+I also started work on a contact form, then a improved contact form using more modular validation directives - I was then out of time.
+
+Lazy Loading
+===========
+Lazy loading by writing/implementing a DOM watching directive would have serious performance implications on rendering and wouldn’t be suitable for a Real World application using JavaScript MVC / SPA / AngularJS.
+
+Having a directive that is watching the state of the DOM prevents the browser from chunking DOM updates with regards to the ng-repeat directive and thus would have a blocking action on the DOM, slowing the page render significantly. A perfect solution
+would take me a further hour of investigation and experimentation. THus I have used loading of extra data on-demand such as scroll (the products) and click (img gallery).
+
+An extra way of increasing performance of the app would be to introduce template caching with the html2js grunt task. This increases performance as AngularJS will check its $templateCache to determine if a template was already fetched, if not it will download the template and put it on the cache. This is an optimization to prevent downloading the same template multiple times.
+
+https://github.com/karlgoldstein/grunt-html2js
+
+Testing
+========
+I haven't ran of created any unit tests for the task - time is the reason for this, please note that I have used my Personal MacBook Pro to produce the
+app, thus I have tested on the following browsers: Firefox 27.0.1, Chrome 32.0.1700.107, Safari 7.0.1 (9537.73.11)
+
+I have not provided IE8 fallbacks for CSS or AngularJS, although these are required in a real world app!
+
+I also haven't done any performance refactoring but I have built with this in mind.
+
+
+Further work
+============
+
+Should you wish for me to continue working on the test you will notice that I have added a ToDo list in the app.js file.
+The list current looks like so...
+
+ ToDo: ng-animate for nicer UI
+ ToDo: Preserve basket using localStorage Service
+ ToDo: Add the grunt task html2js to improve performance https://github.com/karlgoldstein/grunt-html2js
+ ToDo: Different Style for menu button - that page current style....
+ ToDo: Style Model Buttons a little better
+ ToDo: Could improve product ajax load with some kind of loading message
+ ToDo: Unit Tests...
+ ToDo: More Browser Tests
+ ToDo: Refactor SASS variables
+ ToDo: Refactor Grant/NPM modules taken from Yeoman!
+
+Refactoring of my CSS variables and mixins would be beneficial too.
+
+I have commented the code heavily! I have also left code commented out (JS & CSS) if it is intended for further development or improvement or is used for REST/Ajax to to previous backend
+
+Mike Savage

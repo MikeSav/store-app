@@ -1,0 +1,24 @@
+/**
+ * Borders
+ */
+
+@mixin borderSolid($color) {
+  border: 1px solid $color;
+}
+
+@mixin borderDotted($color) {
+  border: 1px dotted $color;
+}
+
+@mixin borderTopSolid($color) {
+  border-top: 1px solid $color;
+}
+
+@mixin borderBottomSolid($color) {
+  border-bottom: 1px solid $color;
+}
+
+@mixin borderRightSolid($color) {
+  border-right: 1px solid $color;
+}
+

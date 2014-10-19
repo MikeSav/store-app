@@ -1,0 +1,12 @@
+@import 'compass';
+// my scss files....
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_basestyles';
+@import 'model.scss';
+@import '_max400.scss';
+@import '_min401max767.scss';
+@import '_min768.scss';
+@import '_validation.scss';
+

@@ -1,0 +1,182 @@
+/*
+ * Common scss... applicable to all media queries
+ */
+
+body {
+  margin-bottom: $marginGeneralXXLarge;
+}
+
+h1 {
+  -webkit-transition: text-shadow 0.12s ease-out;
+  -moz-transition: text-shadow 0.12s ease-out;
+  -ms-transition: text-shadow 0.12s ease-out;
+  -o-transition: text-shadow 0.12s ease-out;
+  transition: text-shadow 0.12s ease-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  color: white;
+  font: bold 11px 'News Cycle';
+  padding: $paddingGeneralSmallCopy;
+  width: 40%;
+  cursor:pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+
+}
+
+h1:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px $sillyPink, 2px 2px $sillyPink, 3px 3px $sillyPink, 4px 4px $sillyPink, 5px 5px $sillyPink, 6px 6px $sillyPink;
+}
+
+
+.big-text {
+
+  font-family: 'Sonsie One', cursive;
+  font-size: 100px;
+
+  -webkit-transition: text-shadow 0.12s ease-out;
+  -moz-transition: text-shadow 0.12s ease-out;
+  -ms-transition: text-shadow 0.12s ease-out;
+  -o-transition: text-shadow 0.12s ease-out;
+  transition: text-shadow 0.12s ease-out;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px $sillyPink, 2px 2px $sillyPink, 3px 3px $sillyPink, 4px 4px $sillyPink, 5px 5px $sillyPink, 6px 6px $sillyPink, 7px 7px $sillyPink, 8px 8px $sillyPink, 9px 9px $sillyPink, 10px 10px $sillyPink, 11px 11px $sillyPink, 12px 12px $sillyPink, 13px 13px $sillyPink, 14px 14px $sillyPink, 15px 15px $sillyPink, 16px 16px $sillyPink, 17px 17px $sillyPink, 18px 18px $sillyPink, 19px 19px $sillyPink, 20px 20px $sillyPink, 21px 21px $sillyPink, 22px 22px $sillyPink, 23px 23px $sillyPink, 24px 24px $sillyPink;
+  }
+
+}
+
+
+h2 {
+  padding: $paddingGeneralSmall;
+}
+
+.products {
+  display: block;
+  clear: both;
+  @include borderBottomSolid($colorGreyLight-40);
+  overflow: auto;
+  padding-bottom: $paddingGeneralSmall;
+  margin-bottom: $marginGeneralSmall;
+}
+
+.prodImage {
+  display: inline-block;
+  float: left;
+}
+
+.prodDetails {
+  display: inline-block;
+  float: left;
+  padding-left: $paddingGeneralSmall;
+}
+
+.productImg {
+  @include borderSolid(transparent);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.basketItems, #basketCount {
+  padding: $paddingGeneralSmall;
+  background: $colorGreyMedium-20;
+}
+
+#basketTotal {
+  @include borderTopSolid($colorBlack-30);
+  @include borderBottomSolid($colorBlack-30);
+  padding: $paddingGeneralSmall;
+}
+
+#productScroll {
+  height: 600px;
+  overflow: scroll;
+  padding: $paddingGeneralSmall;
+  margin-bottom: $marginGeneralXXLarge;
+}
+
+// stop drag on textareas!
+textarea {
+  resize: none;
+}
+
+// put this here... for now
+
+#basketLink {
+  background-color: $colorWhite;
+  @include borderTopSolid($colorBlack-30);
+  padding: $paddingGeneralSmall;
+  padding-bottom: $paddingGeneralMedium;
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
+}
+
+#loginHref {
+  color: $colorWhite;
+}
+
+/*
+
+// animate stuff
+
+transition:  [ <transition-property> ||
+               <transition-duration> ||
+               <transition-timing-function> ||
+               <transition-delay> ]
+
+
+
+
+.repeat-animation {
+  // transition: opacity 1s ease-in-out;
+  transition: all .5s linear;
+
+  // overflow: hidden;
+  // opacity: 1;
+  // max-height: 500px;
+  // transition: max-height 2s ease-out;
+
+}
+
+.ng-hide {
+  opacity: 0;
+  max-height: 0px;
+}
+
+.repeat-animation.ng-hide-add, .repeat-animation.ng-hide-remove {
+
+  // this needs to be here to make it visible during the animation
+  //   since the .ng-hide class is already on the element rendering
+  //   it as hidden.
+
+  display: block !important;
+}
+
+*/
+
+.mikeClass {
+  color: black !important;
+}
+
+#sections div {
+  display: inline-block;
+  border: 1px solid darkolivegreen;
+  padding: 10px;
+}
+
+.colorIdea {
+  color: cornflowerblue;
+}
+
+button[disabled=disabled]{
+  background-color: $colorGreyDark-10;
+}

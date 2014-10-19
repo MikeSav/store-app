@@ -1,0 +1,206 @@
+@media screen and (min-width: 768px) {
+
+  body {
+    font-family: 'News Cycle', sans-serif;
+    background-color: $colorKoromiko;
+  }
+
+  button {
+    border: 1px solid $colorKoromiko;
+    background: $colorKoromiko;
+  }
+
+  .menu {
+    background-color: $colorRedLight-40;
+    color: $colorWhite;
+    @include borderRightSolid($colorWhite);
+    padding: $paddingGeneralSmall;
+
+    a {
+      color: $colorWhite;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ul {
+    background-color: $colorRedLight-40;
+    display: block;
+    overflow: auto;
+    @include borderBottomSolid($colorWhite);
+
+    li {
+      float: left;
+      display: inline-block;
+    }
+  }
+
+  #welcomeText {
+    display: block;
+    padding: $paddingGeneralSmall;
+    max-width: 1024px;
+
+    input {
+      width: 300px;
+      padding: $paddingGeneralSmall;
+    }
+  }
+
+  #headerWrapper {
+    background: $colorRegalBlue;
+    @include borderBottomSolid($colorWhite);
+    overflow: auto;
+  }
+
+  #maxWidWrap {
+    max-width: 1024px;
+  }
+
+  #header {
+    background: $colorRegalBlue;
+    padding: $paddingGeneralLarge $paddingGeneralLarge $paddingGeneralLarge $paddingGeneralSmall;
+    float: left;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #mobileButton {
+    display: none;
+  }
+
+  #logIn {
+    display: inline-block;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    font-size: $fontSize-M;
+  }
+
+  #admin {
+    float: right;
+  }
+
+  #footer {
+    background: $colorSkyBlue;
+    color: $colorWhite;
+    padding: $paddingGeneralSmall;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #basketLink {
+    background-color: $colorSeaShell;
+    padding: $paddingGeneralSmall;
+  }
+
+  a {
+    color: $colorRedDark-40;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-family: 'Sonsie One', cursive;
+    color: $colorWhite;
+    font-size: $fontSize-XL;
+  }
+
+  h2 {
+    font-family: 'Sonsie One', cursive;
+    font-size: $fontSize-L;
+    clear: both;
+  }
+
+  // form stuff...
+  fieldset {
+
+    padding: $paddingGeneralSmall;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    button {
+      border: 1px solid $colorRegalBlue;
+      background: $colorRegalBlue;
+    }
+
+
+    h2 {
+      padding-left: 0;
+    }
+
+    .conlabel {
+      width: 100px;
+      display: inline-block;
+      font-size: $fontSize-M;
+      margin-bottom: $marginGeneralSmall;
+    }
+
+    input[type='text'], input[type='password'], input[type='email']{
+      width: 300px;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+    // this is for the model inputs...
+    #logInWrapper input[type='text'], #logInWrapper input[type='password'] {
+      width: 90%;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+    }
+
+    textarea {
+      width: 300px;
+      padding: $paddingGeneralSmall;
+      margin-bottom: $marginGeneralMedium;
+      display: inline-block;
+    }
+
+    #messageWrap * {
+      vertical-align: middle;
+    }
+
+  }
+
+  //images for main...
+
+  .newItems img {
+    float: left;
+  }
+
+  #newItemsWrapper {
+    background-color: $colorWhite;
+    margin: auto;
+    @include borderTopSolid($colorRedDark-40);
+    @include borderBottomSolid($colorRedDark-40);
+    padding-bottom: $paddingGeneralMedium;
+  }
+
+  #newItemsInner{
+    max-width: 1024px;
+  }
+
+  #newItemNav {
+    display: block;
+    text-align: center;
+    clear: both;
+    width: 750px;
+  }
+
+  .form-message {
+    max-width: 400px;
+  }
+
+  .button-div {
+    padding-top: $paddingGeneralSmall;
+  }
+
+}

@@ -1,0 +1,59 @@
+<!-- include menu -->
+<div data-ng-include="'views/menu.html'" data-ng-controller="MenuCtrl"></div>
+
+<div id="welcomeText">
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer urna elit, eleifend id congue eu, ultrices ut
+        nisi. Nam nisi tortor, auctor non dictum quis, mattis a dui. Nunc aliquet elit quis sollicitudin feugiat. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus et orci
+        sit amet sodales. Suspendisse nisi neque, pellentesque quis accumsan eu, vehicula id neque. In consectetur
+        fermentum dictum. Vivamus purus ligula, viverra tincidunt metus in, ultricies dictum tellus. Nam elit enim,
+        venenatis vel gravida vel, facilisis et est. Sed posuere eros non commodo condimentum. Aliquam in lorem nunc.
+        Nunc viverra lectus at sem condimentum, vel congue justo fringilla. Pellentesque at molestie nisl.
+        <br><br>
+        Put your name here and get 10% off your Bill!
+        <br><br>
+        <input type="text" data-ng-model="customerName" placeholder="Type Your Name">
+    </section>
+</div>
+
+<div id="newItems">
+    <h2>New Items...</h2>
+
+    <div id="newItemsWrapper">
+        <div id="newItemsInner">
+            <div class="newItems" data-ng-repeat="new in newItems | limitTo:3">
+                <img data-ng-src="images/new/{{new}}.JPG">
+            </div>
+            <div id="newItemNav">
+                <a href data-ng-click="moveNewItem('down');"><<</a>
+                <a href data-ng-click="moveNewItem('up');">>></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Featured Products</h2>
+<div data-lr-infinite-scroll="loadMore" id="productScroll" data-scroll-threshold="500">
+    <div class="products fade-in" data-ng-repeat="product in products">
+        <div class="prodImage"><img data-ng-src="images/products/{{product.photo}}" class="productImg"></div>
+        <div class="prodDetails">
+            Name: {{ product.name }} <br>
+            Price: {{ product.price | currency:"&#128;"}} <br>
+            <a href data-ng-click="addToBasket(product)">Go on, treat yourself...</a>
+        </div>
+    </div>
+</div>
+
+<div>
+
+    <div id="basketLink">
+        <a href data-ng-click="showBasket()">Show Basket</a>
+    </div>
+
+    <footer id="footer">
+        <address>
+            &#169; Company Name, Merseburger Strasse 14, Berlin, 10823
+        </address>
+    </footer>
+</div>

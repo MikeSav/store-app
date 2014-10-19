@@ -1,0 +1,33 @@
+[
+    {
+        "id": 4,
+        "name": "Product 4",
+        "price": 29.99,
+        "photo": "4.jpg"
+    },
+
+    {
+        "id": 19,
+        "name": "Product 19",
+        "price": 15.99,
+        "photo": "19.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Product 23",
+        "price": 13.99,
+        "photo": "23.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Product 41",
+        "price": 38.99,
+        "photo": "41.jpg"
+    },
+    {
+        "id": 47,
+        "name": "Product 47",
+        "price": 68.99,
+        "photo": "47.jpg"
+    }
+]
